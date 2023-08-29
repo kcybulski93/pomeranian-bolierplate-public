@@ -1,0 +1,53 @@
+.data {
+    color: var(--text-text-primary, #222);
+    font-family: 'Roboto', sans-serif;
+    font-size: 10.5px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 228.571% */
+    letter-spacing: 1.68px;
+    text-transform: uppercase;
+}
+
+.title {
+    color: var(--text-text-primary, #222);
+    font-family: 'Roboto', sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 56px; /* 133.333% */
+    margin: 5px 0 5px 0;
+}
+
+.content {
+    width: 912px;
+    color: var(--text-text-primary, #222);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px; /* 168.75% */
+    margin-top: 28px;
+}
+
+.name {
+    width: 377px;
+    color: var(--text-text-secondary, rgba(34, 34, 34, 0.80));
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 177.778% */
+    margin: 0px;
+}
+
+.position{
+    width: 796px;
+    color: var(--text-text-secondary, rgba(34, 34, 34, 0.80));
+    font-family: MADE TOMMY;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    margin: 0px;
+}
