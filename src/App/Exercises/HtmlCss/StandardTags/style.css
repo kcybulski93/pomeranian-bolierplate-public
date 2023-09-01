@@ -1,13 +1,3 @@
-@font-face {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    src: url('./Roboto-Regular.ttf');
-}
-
-*{
-    font-family: 'Roboto', sans-serif;
-}
-
 .color {
     color: red;
 }
