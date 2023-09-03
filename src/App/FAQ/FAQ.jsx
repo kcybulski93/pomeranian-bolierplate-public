@@ -4,9 +4,9 @@ import './styles.css';
 export const FAQ = () => {
   return (
     <div>
-      <SingleQuestion question="Tekst 1" answer="Answer 1" />
-      <SingleQuestion question="Tekst 2" answer="Answer 2" />
-      <SingleQuestion question="Tekst 3" answer="Answer 3" />
+      <SingleQuestion question="Pytanie numer 1" answer="Odpowiedź numer 1" />
+      <SingleQuestion question="Pytanie numer 2" answer="Odpowiedź numer 2" />
+      <SingleQuestion question="Pytanie numer 3" answer="Odpowiedź numer 3" />
     </div>
   );
 };

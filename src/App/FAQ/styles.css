@@ -24,6 +24,11 @@
   margin: 0px;
 }
 
+.title:hover {
+  color: #666;
+  text-decoration: underline;
+}
+
 .line {
   width: 708.025px;
   height: 1px;
