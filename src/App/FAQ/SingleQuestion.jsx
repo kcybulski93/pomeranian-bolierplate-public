@@ -7,7 +7,6 @@ export const SingleQuestion = ({ question, answer }) => {
   function handleClick() {
     setVisable(!visable);
   }
-  console.log(visable);
 
   return (
     <div>
