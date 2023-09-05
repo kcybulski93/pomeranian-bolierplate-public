@@ -1,0 +1,50 @@
+.profile {
+  height: 360px;
+  width: 334px;
+}
+
+.profile-content {
+  margin-left: 23px;
+}
+
+p {
+  margin: 0px;
+  color: var(--colors-black-100, #8e8484);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+
+.myPhoto {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  filter: grayscale(38%) sepia(26%);
+  -webkit-filter: grayscale(38%) sepia(26%);
+  -moz-filter: grayscale(38%) sepia(26%);
+  margin-top: 45px;
+}
+
+.name {
+  color: var(--secondary-secondary, #23213d);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 10px;
+}
+
+.contact {
+  margin-top: 14px;
+}
+
+.mail {
+  padding: 10px 10px 10px 0px;
+}
+
+.phone {
+  padding: 10px 10px 10px 0px;
+}

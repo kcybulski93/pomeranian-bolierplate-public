@@ -1,13 +1,17 @@
+import { DasboardMyProfile } from '../Components/DasboardMyProfile/DasboardMyProfile';
 import './styles.css';
 
 export const Dashboard = () => {
   return (
     <div className="dashboard">
-      <h1>Dashboard</h1>
-      <p>
-        Strona główna kursanta (o sobie, zdjęcie, opis narzędzi wykorzystywanych
-        na kursie oraz umejętności zdobytych na kursie)
-      </p>
+      <main className="dashboard-content">
+        <section className="title">
+          <div className="name"></div>
+          <p className="title-content"></p>
+        </section>
+        <section className="articles"></section>
+      </main>
+      <DasboardMyProfile />
     </div>
   );
 };

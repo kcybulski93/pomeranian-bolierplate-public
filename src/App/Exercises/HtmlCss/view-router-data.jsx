@@ -1,4 +1,5 @@
 import { getParsedRouterDataList } from '../../router-data/parseRouterData';
+import { arrayRenderToTableRouterMetaData } from './ArrayRenderToTable/router-data';
 import { arrayRenderingRouterMetaData } from './ArrayRendering/router-data';
 import { boxModelRouterMetaData } from './BoxModel/router-data';
 import { colorsRouterMetaData } from './Colors/router-data';
@@ -22,5 +23,6 @@ export const blockRouterMetaData = [
   boxModelRouterMetaData,
   tablesRouterMetaData,
   arrayRenderingRouterMetaData,
+  arrayRenderToTableRouterMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

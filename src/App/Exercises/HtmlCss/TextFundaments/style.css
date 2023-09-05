@@ -1,66 +1,62 @@
 @font-face {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    src: url('./Roboto-Regular.ttf');
-}
-
-*{
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  src: url('./Roboto-Regular.ttf');
 }
 
 .color {
-    color: red;
+  color: red;
 }
 
 .size {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .style {
-    font-style: italic;
+  font-style: italic;
 }
 
 .weight {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .transform {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .decoration {
-    text-decoration:line-through;
+  text-decoration: line-through;
 }
 
 .shadow {
-    text-shadow: 10px 9px 4px rgba(255, 18, 18, 1);
+  text-shadow: 10px 9px 4px rgba(255, 18, 18, 1);
 }
 
 .height {
-    line-height: 30px;
+  line-height: 30px;
 }
 
 .spacing {
-    letter-spacing: 15px;
+  letter-spacing: 15px;
 }
 
 .wordspacing {
-    word-spacing: 30px;
+  word-spacing: 30px;
 }
 
 .align {
-    text-align: center;
+  text-align: center;
 }
 
 .super {
-    vertical-align: super;
+  vertical-align: super;
 }
 
 .sub {
-    vertical-align: sub;
+  vertical-align: sub;
 }
 
 .list-ol {
-    list-style-position: inside;
-    list-style-type:lower-roman;
+  list-style-position: inside;
+  list-style-type: lower-roman;
 }
