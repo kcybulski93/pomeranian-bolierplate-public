@@ -7,7 +7,7 @@
   margin-left: 23px;
 }
 
-p {
+.profile p {
   margin: 0px;
   color: var(--colors-black-100, #8e8484);
   font-feature-settings: 'clig' off, 'liga' off;

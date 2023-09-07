@@ -12,6 +12,7 @@ import { Calendar } from './App/Components/Calendar/Calendar';
 import { Blog } from './App/Blog/Blog';
 import { FAQ } from './App/FAQ/FAQ';
 import { TechStack } from './App/TechStack/TechStack';
+import { FloatsAndPositioningExercises } from './App/Exercises/HtmlCss/FloatsAndPositioningExercises/FloatsAndPositioningExercises';
 
 export function App() {
   return (

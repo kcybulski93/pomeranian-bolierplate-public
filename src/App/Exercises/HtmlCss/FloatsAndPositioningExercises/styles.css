@@ -1,0 +1,152 @@
+.fapConteiner {
+  position: relative;
+  margin: 0 100px;
+}
+
+.fapItem1 {
+  position: relative;
+}
+
+.fapItem1 p:last-child {
+  position: absolute;
+  top: 10px;
+  left: 30px;
+}
+
+.fapItem2 {
+  background: var(--gray-200, #ebebeb);
+  margin-top: 60px;
+  padding: 17px 21px;
+}
+
+.fapItem3 {
+  position: absolute;
+  top: 40px;
+  right: -120px;
+  border-radius: 5.5px;
+  border: 1px solid var(--gray-500, #999);
+  background: var(--primary-primary-light, #ffd5db);
+  width: 203px;
+  padding: 12px 19px;
+}
+
+.fapItem3 p {
+  text-align: center;
+}
+
+.fapItem4 {
+  margin-top: 30px;
+  position: relative;
+  background: var(--primary-primary-light, #ffd5db);
+  height: 250px;
+}
+
+.fapItem4 img {
+  position: relative;
+  float: left;
+  width: 300px;
+  border-radius: 8px;
+  top: 20px;
+  left: 20px;
+}
+
+.fapItem4 p {
+  margin: 40px 40px;
+  width: 500px;
+  float: left;
+  text-align: justify;
+  padding: 15px 20px;
+}
+
+.fapItem5 {
+  border-radius: 5.5px;
+  border: 1px solid var(--gray-500, #999);
+  background: var(--primary-primary-light, #ffd5db);
+  padding: 12.375px 19.938px;
+  width: 120px;
+  height: 80px;
+  position: absolute;
+  top: 500px;
+  right: -120px;
+}
+
+.fapItem5 p {
+  margin: 0;
+  text-align: center;
+  line-height: 26px;
+}
+
+.fapItem6 {
+  background: var(--gray-900, #4b5563);
+  padding: 12px 19px;
+  margin-top: 120px;
+}
+
+.fapItem6 p {
+  color: white;
+  text-align: justify;
+}
+
+.fapItem7 {
+  position: absolute;
+  border-radius: 19.644px;
+  border: 1px solid var(--primary-primary, #fe3756);
+  background: var(--primary-primary-light, #ffd5db);
+  width: 360px;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 30px;
+}
+
+.fapItem7 p {
+  text-align: center;
+}
+
+.fapItem8 {
+  margin-top: 120px;
+}
+
+.fapItem8 p {
+  text-align: justify;
+}
+.fapItem9 {
+  position: relative;
+  border-radius: 8px;
+  border: 2px solid var(--gray-700, #6b7280);
+  width: 985px;
+  height: 246px;
+  margin-bottom: 100px;
+}
+
+.fapLightGray {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  width: 100px;
+  height: 100px;
+  border: 2px solid var(--gray-200, #ebebeb);
+  background: var(--gray-300, #c8cbd1);
+  border-radius: 8px;
+}
+
+.fapGray {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  border: 2px solid var(--gray-200, #ebebeb);
+  background: var(--gray-500, #999);
+}
+
+.fapDarkGray {
+  position: absolute;
+  bottom: 70px;
+  left: 70px;
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  border: 2px solid var(--gray-300, #c8cbd1);
+  background: var(--gray-700, #6b7280);
+}
