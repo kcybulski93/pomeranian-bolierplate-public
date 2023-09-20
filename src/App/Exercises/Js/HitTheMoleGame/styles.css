@@ -1,0 +1,84 @@
+.game p {
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px; /* 172.222% */
+}
+
+.game-time {
+  display: flex;
+  width: 850px;
+  height: 90px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.moles-number {
+  display: flex;
+  width: 850px;
+  height: 90px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.control-button {
+  display: flex;
+  width: 850px;
+  height: 90px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.control-button p {
+  width: 250px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px; /* 172.222% */
+}
+
+.control-button-button {
+  width: 600px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  align-items: center;
+}
+.small-button {
+  width: 163px;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid var(--secondary-secondary, #23213d);
+  background: var(--secondary-secondary, #23213d);
+  color: white;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px; /* 172.222% */
+}
+
+.chosen-button {
+  width: 163px;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid var(--primary-primary, #fe3756);
+  background: var(--primary-primary, #fe3756);
+  color: white;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px; /* 172.222% */
+}
+
+.timer {
+  display: flex;
+}
