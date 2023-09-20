@@ -6,14 +6,7 @@
   line-height: 31px; /* 172.222% */
 }
 
-.game-time {
-  display: flex;
-  width: 850px;
-  height: 90px;
-  justify-content: space-between;
-  align-items: center;
-}
-
+.game-time,
 .moles-number {
   display: flex;
   width: 850px;
@@ -22,7 +15,9 @@
   align-items: center;
 }
 
-.control-button {
+.control-button,
+.timer,
+.score {
   display: flex;
   width: 850px;
   height: 90px;
@@ -30,13 +25,9 @@
   align-items: center;
 }
 
-.control-button p {
+.control-button p,
+.game-statistics p {
   width: 250px;
-  font-family: Poppins;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 31px; /* 172.222% */
 }
 
 .control-button-button {
@@ -51,6 +42,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .small-button {
   width: 163px;
   height: 56px;
@@ -79,6 +71,64 @@
   line-height: 31px; /* 172.222% */
 }
 
-.timer {
+.time,
+.actual-score {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 163px;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid var(--gray-200, #ebebeb);
+  background: var(--gray-200, #ebebeb);
+}
+
+.time p,
+.actual-score p {
+  width: 163px;
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px; /* 140.909% */
+  text-transform: uppercase;
+}
+
+.stop-button {
+  width: 163px;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid var(--colors-actions-danger, #e12b1b);
+  background: var(--colors-actions-danger, #e12b1b);
+  color: white;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px; /* 172.222% */
+}
+
+.game-board {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 550px;
+  height: 220px;
+  margin: 100px auto 0 auto;
+}
+
+.game-board div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 102px;
+  height: 102px;
+  border-radius: 8px;
+  background: var(--gray-200, #ebebeb);
+}
+
+.margin-bottom {
+  height: 100px;
 }

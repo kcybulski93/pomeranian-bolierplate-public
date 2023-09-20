@@ -1,14 +1,9 @@
 import { FirstRowButtons } from './FirstRowButtons';
 import { SecondRowButtons } from './SecondRowButtons';
 
-import { useState } from 'react';
-
-export function FirstLayout() {
-  const [startGame, setStartGame] = useState(false);
-
+export function MenuView({ setStartGame }) {
   const handleClick = () => {
     setStartGame(true);
-    console.log(startGame);
   };
 
   return (
@@ -23,8 +18,8 @@ export function FirstLayout() {
       </div>
       <div className="control-button">
         <p>PRZYCISKI STERUJĄCE</p>
-        <div>
-          <button className="small-button" onClick={handleClick} id={startGame}>
+        <div className="control-button-button">
+          <button className="small-button" onClick={handleClick}>
             START
           </button>
         </div>
