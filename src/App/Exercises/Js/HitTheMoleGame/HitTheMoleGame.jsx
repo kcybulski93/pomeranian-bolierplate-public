@@ -5,6 +5,7 @@ import { useState } from 'react';
 
 export function HitTheMoleGame() {
   const [startGame, setStartGame] = useState(false);
+  const [score, setScore] = useState(0);
 
   return (
     <div className="game">
@@ -15,7 +16,11 @@ export function HitTheMoleGame() {
       {!startGame ? (
         <MenuView setStartGame={setStartGame} />
       ) : (
-        <GameView setStartGame={setStartGame} />
+        <GameView
+          setStartGame={setStartGame}
+          score={score}
+          setScore={setScore}
+        />
       )}
     </div>
   );
