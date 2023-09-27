@@ -1,3 +1,11 @@
+.game {
+  cursor: url(img/cursor.svg), pointer;
+}
+
+.game button {
+  cursor: url(img/cursor.svg), pointer;
+}
+
 .game p {
   font-family: Poppins;
   font-size: 18px;
@@ -7,7 +15,8 @@
 }
 
 .game-time,
-.moles-number {
+.moles-number,
+.hidden-squares {
   display: flex;
   width: 850px;
   height: 90px;
@@ -31,9 +40,9 @@
 }
 
 .control-button-button {
-  width: 600px;
   justify-content: flex-start;
   align-items: center;
+  margin-right: 40px;
 }
 
 .buttons {
@@ -114,8 +123,6 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  width: 550px;
-  height: 220px;
   margin: 100px auto 0 auto;
 }
 
@@ -153,6 +160,72 @@
     0px 2px 28px 0px rgba(0, 0, 0, 0.12);
 }
 
+.empty-square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 102px;
+  height: 102px;
+  border-radius: 8px;
+  background: var(--colors-actions-danger-light, #aa7563);
+  box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.15),
+    0px 2px 28px 0px rgba(0, 0, 0, 0.12);
+}
+
 .margin-bottom {
   height: 100px;
+}
+
+div .congratulations {
+  color: var(--text-text-primary, #222);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px; /* 171.429% */
+}
+
+.game-board-3-columns {
+  width: 330px;
+}
+
+.game-board-4-columns {
+  width: 440px;
+}
+
+.game-board-5-columns {
+  width: 550px;
+}
+
+.game-board-6-columns {
+  width: 660px;
+}
+
+.game-board-7-columns {
+  width: 770px;
+}
+
+.game-board-8-columns {
+  width: 880px;
+}
+
+.game-board-2-rows {
+  height: 220px;
+}
+
+.game-board-3-rows {
+  height: 330px;
+}
+
+.game-board-4-rows {
+  height: 440px;
+}
+
+.game-board-5-rows {
+  height: 550px;
+}
+
+.game-board-6-rows {
+  height: 660px;
 }

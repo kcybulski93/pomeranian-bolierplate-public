@@ -1,30 +1,35 @@
-import { useState } from 'react';
-
-export function SecondRowButtons() {
-  const [chosenButton, setChosenButton] = useState(null);
-
+export function SecondRowButtons({
+  secondRowChosenButton,
+  setSecondRowChosenButton,
+}) {
   const handleClick = (event) => {
-    setChosenButton(event.target.id);
+    setSecondRowChosenButton(event.target.id);
   };
 
   return (
     <div className="buttons">
       <button
-        className={chosenButton == 1 ? 'chosen-button' : 'small-button'}
+        className={
+          secondRowChosenButton == 1 ? 'chosen-button' : 'small-button'
+        }
         id={1}
         onClick={handleClick}
       >
         1 kret
       </button>
       <button
-        className={chosenButton == 2 ? 'chosen-button' : 'small-button'}
+        className={
+          secondRowChosenButton == 2 ? 'chosen-button' : 'small-button'
+        }
         id={2}
         onClick={handleClick}
       >
         2 krety
       </button>
       <button
-        className={chosenButton == 3 ? 'chosen-button' : 'small-button'}
+        className={
+          secondRowChosenButton == 3 ? 'chosen-button' : 'small-button'
+        }
         id={3}
         onClick={handleClick}
       >
