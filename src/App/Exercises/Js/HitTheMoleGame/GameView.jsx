@@ -24,23 +24,31 @@ export function GameView({
     initialArray.push({ id: i, isMolePresent: false, isClicked: false });
   }
 
-  function squareDraw() {
-    for (let i = 0; i < thirdRowChosenButton; i++) {
-      let squareDraw =
-        Math.floor(Math.random() * rowsNumber * columnsNumber) + 1;
-      setArrayWithMole(
-        arrayWithMole.map((element) => {
-          if (element.id == squareDraw) {
-            return { ...element, emptySquare: true };
-          }
-        })
-      );
-    }
-    return initialArray;
+  for (let i = 0; i < thirdRowChosenButton; i++) {
+    let squareDraw = Math.floor(Math.random() * rowsNumber * columnsNumber) + 1;
+    initialArray.map((element) => {
+      if (element.id === squareDraw) {
+        return (element.id = null);
+      }
+    });
   }
-  console.log(initialArray);
 
-  const [arrayWithMole, setArrayWithMole] = useState(squareDraw());
+  // function squareDraw() {
+  //   for (let i = 0; i < thirdRowChosenButton; i++) {
+  //     let squareDraw =
+  //       Math.floor(Math.random() * rowsNumber * columnsNumber) + 1;
+  //     setArrayWithMole(
+  //       arrayWithMole.map((element) => {
+  //         if (element.id === squareDraw) {
+  //           return (element.id = null);
+  //         }
+  //       })
+  //     );
+  //   }
+  // }
+  // console.log(initialArray);
+
+  const [arrayWithMole, setArrayWithMole] = useState(initialArray);
   const [time, setTime] = useState(Time());
   const [arrayWithPresentMole, setarrayWithPresentMole] = useState(0);
 
@@ -62,6 +70,7 @@ export function GameView({
         };
       })
     );
+
     if (item.isMolePresent && !item.isClicked) {
       setScore(score + 1);
     } else if (score > 0 && !item.isMolePresent) setScore(score - 1);
@@ -84,7 +93,7 @@ export function GameView({
       draw = Math.floor(Math.random() * rowsNumber * columnsNumber) + 1;
       let isPresent = false;
       arrayWithMole.map((element) => {
-        if (element.id === draw && element.emptySquare) {
+        if (element.id === null) {
           draw = Math.floor(Math.random() * rowsNumber * columnsNumber) + 1;
         }
       });
@@ -212,7 +221,7 @@ export function GameView({
               className = 'wrong-square';
             }
           } else className = 'square';
-          if (element.emptySquare) {
+          if (element.id === null) {
             className = 'empty-square';
           }
 
