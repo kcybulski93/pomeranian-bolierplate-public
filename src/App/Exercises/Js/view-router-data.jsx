@@ -20,6 +20,7 @@ import { animationsJsRouterMetaData } from './AnimationsJS/router-data';
 import { hitTheMoleGameRouterMetaData } from './HitTheMoleGame/router-data';
 import { tryCatchAndFinallyRouterMetaData } from './TryCatchAndFinally/router-data';
 import { classesBasicsRouterMetaData } from './ClassesBasics/router-data';
+import { oopEncapsulationRouterMetaData } from './OopEncapsulation/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -42,5 +43,6 @@ export const blockRouterMetaData = [
   hitTheMoleGameRouterMetaData,
   tryCatchAndFinallyRouterMetaData,
   classesBasicsRouterMetaData,
+  oopEncapsulationRouterMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
