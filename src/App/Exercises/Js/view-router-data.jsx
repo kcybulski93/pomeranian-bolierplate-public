@@ -28,6 +28,7 @@ import { tryCatchExerciseRouterMetaData } from './TryCatchExercise/router-data';
 import { jsThisRouterMetaData } from './This/router-data';
 import { asyncAwaitRouterMetaData } from './AsyncAwait/router-data';
 import { jsJsonRouterMetaData } from './Json/router-data';
+import { jsStoragesRouterMetaData } from './JsStorages/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -58,5 +59,6 @@ export const blockRouterMetaData = [
   jsThisRouterMetaData,
   asyncAwaitRouterMetaData,
   jsJsonRouterMetaData,
+  jsStoragesRouterMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
