@@ -1,5 +1,6 @@
 import { useState } from 'react';
-export const AsyncAwait = () => {
+
+export const PromisesExercise2 = () => {
   const [data, setData] = useState(null);
   const [errorMessage, setErrorMessage] = useState(null);
 
@@ -23,26 +24,23 @@ export const AsyncAwait = () => {
     });
   }
 
-  async function loadAllUserData() {
+  function loadAllUserData() {
     setData(null);
     setErrorMessage(null);
-    try {
-      const user = await loadUser();
-      const details = await loadUserDetails(user.id);
-
-      setData(details);
-    } catch (err) {
-      setErrorMessage(err.message);
-    }
-  }
-
-  function handleClick() {
-    loadAllUserData();
+    loadUser().then((user) => {
+      loadUserDetails(user.id)
+        .then((details) => {
+          setData(details);
+        })
+        .catch((err) => {
+          setErrorMessage(err.message);
+        });
+    });
   }
 
   return (
     <div>
-      <button onClick={handleClick}>Pobierz dane</button>
+      <button onClick={loadAllUserData}>Pobierz dane</button>
       {data && (
         <div>
           <p>Id: {data.id}</p>

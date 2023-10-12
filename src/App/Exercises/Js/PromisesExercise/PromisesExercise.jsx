@@ -1,4 +1,7 @@
+import { useEffect, useState } from 'react';
+
 export const PromisesExercise = () => {
+  const [mysResult, setMyResult] = useState(null);
   const myPromise = () =>
     new Promise((resolve, reject) => {
       setTimeout(() => {
@@ -12,16 +15,18 @@ export const PromisesExercise = () => {
       }, 2000);
     });
 
-  myPromise()
-    .then((value) => {
-      console.log(value);
-    })
-    .catch((err) => {
-      console.log(err);
-    })
-    .finally(() => {
-      console.log('koniec');
-    });
+  useEffect(() => {
+    myPromise()
+      .then((value) => {
+        setMyResult(value);
+      })
+      .catch((err) => {
+        setMyResult(err);
+      })
+      .finally(() => {
+        console.log('koniec');
+      });
+  }, []);
 
-  return <div>Hello Primises</div>;
+  return <div>{mysResult}</div>;
 };

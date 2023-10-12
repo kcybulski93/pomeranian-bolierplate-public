@@ -30,6 +30,10 @@ import { asyncAwaitRouterMetaData } from './AsyncAwait/router-data';
 import { jsJsonRouterMetaData } from './Json/router-data';
 import { jsStoragesRouterMetaData } from './JsStorages/router-data';
 import { promisesExerciseRouterMetaData } from './PromisesExercise/router-data';
+import { promisesExercise2RouterMetaData } from './PromisesExercise2/router-data';
+import { promiseMethodsRouterMetaData } from './PromiseMethods/router-data';
+import { localDevAndFetchRouterMetaData } from './LocalDevAndFetch/router-data';
+import { toDoWithServerRouterMetaData } from './ToDoWithServer/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -58,9 +62,13 @@ export const blockRouterMetaData = [
   oopInheritanceExerciseRouterMetaData,
   tryCatchExerciseRouterMetaData,
   jsThisRouterMetaData,
-  asyncAwaitRouterMetaData,
   jsJsonRouterMetaData,
   jsStoragesRouterMetaData,
   promisesExerciseRouterMetaData,
+  promisesExercise2RouterMetaData,
+  asyncAwaitRouterMetaData,
+  promiseMethodsRouterMetaData,
+  localDevAndFetchRouterMetaData,
+  toDoWithServerRouterMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
