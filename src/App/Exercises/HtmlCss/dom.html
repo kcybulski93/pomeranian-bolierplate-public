@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <button class="btn">Klinknij mnie</button>
+
+    <input type="text" class="inpt" />
+
+    <div class="result"></div>
+
+    <script type="text/javascript">
+      function test() {
+        alert('testowe');
+      }
+
+      const button = document.querySelector('.btn');
+
+      const div = document.createElement('div');
+      div.innerHTML = 'jestem nowym divem';
+
+      document.body.append(div);
+
+      //   document.body.removeChild(input);
+
+      button.addEventListener('click', test, true);
+      button.removeEventListener('click', test, true);
+
+      //Dynamiczne Dodawanie elementu
+      const btn2 = document.createElement('button');
+
+      btn2.innerHTML = 'Dynamiczny button';
+
+      btn2.addEventListener('click', () => {
+        console.log('kliknieto dynamiczny button');
+      });
+
+      document.body.append(btn2);
+
+      //Input
+      const input = document.querySelector('.inpt');
+
+      input.addEventListener('change', (event) => {
+        document.querySelector('.result').innerHTML = event.target.value;
+      });
+    </script> -->
+
+    <button class="btn">Kliknij we mnie</button>
+
+    <script type="text/javascript">
+      const button = document.querySelector('.btn');
+
+      button.addEventListener('click', (event) => {
+        event.target.innerHTML = 'Kliknieto we mnie';
+      });
+    </script>
+  </body>
+</html>
