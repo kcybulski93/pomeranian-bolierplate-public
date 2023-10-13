@@ -5,6 +5,7 @@ import { ReactOnClickRouterMetaData } from '../ReactOnClick/router-data';
 import { materialUIBasicElementsRouterMetaData } from './MaterialUIBasicElements/router-data';
 import { basicSelectRouterMetaData } from './BasicSelect/router-data';
 import { useEffectsRouterMetaData } from './UseEffects/router-data';
+import { reactUseRefRouterMetaData } from './ReactUseRef/router-data';
 
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
@@ -12,5 +13,6 @@ export const blockRouterMetaData = [
   materialUIBasicElementsRouterMetaData,
   basicSelectRouterMetaData,
   useEffectsRouterMetaData,
+  reactUseRefRouterMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
