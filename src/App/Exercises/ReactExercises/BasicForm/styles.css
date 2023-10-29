@@ -1,0 +1,318 @@
+.form-wrapper {
+  width: 801px;
+  height: 2539px;
+  border-radius: 16px;
+  background: var(--gray-80, #f4f5f7);
+  box-shadow: 0px 65px 30px 0px rgba(0, 0, 0, 0.01),
+    0px 8px 20px 0px rgba(0, 0, 0, 0.04), 0px 17px 35px 0px rgba(0, 0, 0, 0.05),
+    0px -4px 26px 0px rgba(0, 0, 0, 0.08);
+  margin: 0 auto;
+}
+
+.form {
+  padding-top: 65px;
+  padding-left: 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 77px;
+}
+
+.form h1 {
+  margin: 0;
+  color: var(--text-text-primary, #222);
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.product-order,
+.data-for-order,
+.creating-account {
+  width: 488px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.product-order-elements,
+.data-for-order-elements,
+.creating-account-elements,
+.approval-elements {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.product-order-element-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  align-self: stretch;
+}
+
+.element-title {
+  color: var(--text-text-primary, #222);
+  /* body/bold-16 */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px; /* 168.75% */
+}
+
+.product-order-elements select {
+  width: 488px;
+  color: var(--gray-500, #999);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+
+  display: flex;
+  height: 48px;
+  padding: 13px 16px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+
+  border-radius: 5px;
+  border: 1px solid var(--grey-300, #c8cbd1);
+  background: #fff;
+}
+
+.product-order-element-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.element-content {
+  color: var(--text-text-primary, #222);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  display: flex;
+  height: 40px;
+  align-items: center;
+  gap: 16px;
+}
+
+.product-order input {
+  width: 24px;
+  height: 24px;
+}
+
+.product-order-element-2 div {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  gap: 16px;
+}
+
+.data-for-order-element-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  align-self: stretch;
+}
+
+.data-for-order-element-1 input {
+  width: 488px;
+  display: flex;
+  height: 48px;
+  padding: 13px 16px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+
+  border-radius: 5px;
+  border: 1px solid var(--grey-300, #c8cbd1);
+  background: #fff;
+
+  color: var(--gray-500, #999);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+}
+
+.data-for-order-element-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.data-for-order-element-2 textarea {
+  display: flex;
+  width: 488px;
+  height: 169px;
+  padding: 13px 16px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--grey-300, #c8cbd1);
+  background: #fff;
+
+  color: var(--gray-500, #999);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+}
+
+.creating-account-element-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.creating-account-element-1 input {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.creating-account-element-1 div {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  gap: 16px;
+}
+
+.password-elements {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 21px;
+}
+
+.password-elements input {
+  width: 488px;
+  display: flex;
+  height: 48px;
+  padding: 13px 16px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 5px;
+  border: 1px solid var(--grey-300, #c8cbd1);
+  background: #fff;
+
+  color: var(--gray-500, #999);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+}
+
+.approval {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+.approval-element {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  align-self: stretch;
+}
+
+.approval-elements input {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.approval-element div {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  gap: 16px;
+}
+
+.order-button {
+  display: flex;
+  width: 491px;
+  height: 56px;
+  padding: 20px 36px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 80px auto;
+
+  border-radius: 8px;
+  border: 1px solid var(--primary-primary, #fe3756);
+  background: var(--primary-primary, #fe3756);
+
+  color: #fff;
+
+  text-align: center;
+  /* button/button */
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px; /* 172.222% */
+}
+
+form input[type='radio'] {
+  position: absolute;
+  visibility: hidden;
+}
+
+form input[type='radio'] + .element-content:before {
+  border: 1px solid #9ca3af;
+  background: #f4f5f7;
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+form input[type='radio']:checked + .element-content:before {
+  background-color: #fe3756;
+  box-shadow: inset 0 0 0 4px #f4f5f7;
+  border: 1px solid #fe3756;
+}
+
+form input[type='checkbox'] {
+  position: absolute;
+  visibility: hidden;
+}
+
+form input[type='checkbox'] + .element-content:before {
+  border: 1px solid #9ca3af;
+  background: #f4f5f7;
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+form input[type='checkbox']:checked + .element-content:before {
+  background: #fe3756;
+  box-shadow: inset 0 0 0 4px #f4f5f7;
+  border: 1px solid #fe3756;
+}
